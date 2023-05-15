@@ -23,7 +23,7 @@
                     </a>
                 </div>
                 <div class="navbar">
-                    <ul>
+                    <ul id="menuList">
                         <li><a href="#1">About Us</a></li>
                         <li><a href="#1">Services</a></li>
                         <li><a href="#1">Use Cases</a></li>
@@ -32,6 +32,8 @@
                         <li><a href="#1">Request a quote</a></li>
                     </ul>
                 </div>
+
+                <img src="./images/menu-icon.svg" class="menu-icon" onclick="togglemenu()">
 
 
 
@@ -54,14 +56,18 @@
         </div>
         <div class="container">
             <div class="com-logos">
-                <ul>
-                    <li> <img src="./images/amazon.png" alt="amazon"> </li>
-                    <li> <img src="./images/netflix.png" alt="netflix"></li>
-                    <li> <img src="./images/notion.png" alt="notion"> </li>
-                    <li> <img src="./images/hubspot.png" alt="hubspot"> </li>
-                    <li> <img src="./images/irribble.png" alt="irribble"> </li>
-                    <li class="zoom"> <img src="./images/zoom.png" alt="zoom"> </li>
-                </ul>
+                <table>
+                    <tr>
+                        <td><img src="./images/amazon.png" alt="amazon"></td>
+                        <td><img src="./images/netflix.png" alt="netflix"></td>
+                        <td><img src="./images/notion.png" alt="notion"> </td>
+                        <td><img src="./images/hubspot.png" alt="hubspot"></td>
+                        <td><img src="./images/irribble.png" alt="irribble"></td>
+                        <td><img src="./images/zoom.png" alt="zoom"></td>
+                    </tr>
+                </table>
+                   
+                
             </div>
         </div>
     </div>
@@ -75,6 +81,9 @@
                 These services include:</p>
         </div>
     </section>
+
+    <!-- Ikkinchi section -->
+
     <section id="div-two">
         <div class="container">
             <div class="div-first">
@@ -131,9 +140,8 @@
 
 
 
-
-
-
+     <!-- uchinchi section -->
+        
     <div id="div-three">
         <div class="container">
             <div class="back-color">
@@ -141,13 +149,15 @@
                 <p>Contact us today to learn more about how our digital marketing services can help your business grow
                     and succeed online.</p>
                 <button>Get your free proposal</button>
-                <img src="./images/Illustration.png" alt="Illustration">
+                <img src="./images/smile.png" alt="Illustration">
 
             </div>
         </div>
     </div>
 
 
+    
+   
 
     <section class="gase-studies">
         <div class="container">
@@ -179,7 +189,7 @@
     </div>
 
 
-
+ 
 
     <section id="our-working">
         <div class="container">
@@ -192,7 +202,7 @@
 
     <section id="accardion">
         <div class="container">
-            <ul class="accardion">
+            <ul class="accardion-child">
                 <li>
                     <input type="radio" name="accardion" id="first">
                     <label for="first">01 Products</label>
@@ -356,7 +366,7 @@
         </div>
     </section>
 
-
+ 
     <section id="object">
           <div class="container">
             <div class="objeck-child">
@@ -376,7 +386,7 @@
 
                 <input type="submit" id="btn-bot" value="Send Message">
 
-                <img src="./images/moon.png" alt="moon">
+                <img src="./images/moon-1.png" alt="moon">
 
             </div>
           </div>
@@ -432,6 +442,27 @@
 
 
 
+
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight = "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+    
+    
+ 
 
 
 </body>

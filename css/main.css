@@ -1,0 +1,385 @@
+@charset "UTF-8";
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.6rem 0px;
+}
+.nav__logo {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 3.9rem;
+  font-family: montserrat;
+  color: #192252;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+.nav__menu a {
+  color: #192252;
+}
+.nav__btn button {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #0e1734;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8rem 0;
+}
+.hero__info {
+  width: 50%;
+}
+.hero__info h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 7.2rem;
+  font-family: "Montserrat";
+}
+.hero__info p {
+  margin: 2.4rem 0 3.2rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #848fac;
+}
+.hero__info button {
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #0e1734;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+.hero__img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+  align-items: start;
+}
+.hero__img img {
+  width: 100%;
+}
+.hero__img img:nth-child(2) {
+  padding-top: 8rem;
+}
+
+.hotel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8rem 0;
+}
+.hotel__img {
+  width: 40%;
+}
+.hotel__about {
+  width: 60%;
+}
+.hotel h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 5.4rem;
+  font-family: "Montserrat";
+}
+.hotel p {
+  margin: 2.4rem 0 3.2rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #848fac;
+}
+.hotel button {
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #0e1734;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+
+.cabin-food {
+  padding: 8rem 0;
+}
+.cabin-food__first {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cabin-food__second {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cabin-food__about {
+  width: 55%;
+}
+.cabin-food__img {
+  width: 45%;
+}
+.cabin-food__h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 5.4rem;
+  font-family: "Montserrat";
+}
+.cabin-food__parag {
+  margin: 2.4rem 0 3.2rem 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #848fac;
+}
+
+.rooms {
+  padding: 8rem 0;
+}
+.rooms h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 5.4rem;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.rooms__main-parag {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: "Inter";
+  text-align: center;
+  margin: 2.4rem 0 3.2rem 0;
+  color: #848fac;
+}
+.rooms button {
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #0e1734;
+  color: #fff;
+  margin-left: 50rem;
+  margin-bottom: 8.8rem;
+}
+.rooms__h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  font-family: montserrat;
+  color: #000;
+  margin-top: 3.2rem;
+}
+.rooms__parag {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  color: #848fac;
+  font-family: inter;
+  margin: 1.6rem 0 3.2rem 0;
+}
+.rooms__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.4rem;
+}
+.rooms__link a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: inter;
+  color: #424F7B;
+}
+.rooms__box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+
+.contact {
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact__left {
+  width: 50%;
+}
+.contact__left h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  font-family: montserrat;
+}
+.contact__left h1 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 5.4rem;
+  font-family: montserrat;
+  color: #192252;
+  margin-top: 1.2rem;
+}
+.contact__left p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: inter;
+  color: #848fac;
+  margin: 2.4rem 0 3.2rem 0;
+}
+.contact__left div {
+  gap: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contact__left div button {
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #0e1734;
+  color: #fff;
+}
+.contact__right {
+  width: 50%;
+}
+.contact__box {
+  width: 100%;
+  height: 10rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  position: relative;
+}
+.contact__mart {
+  margin-top: 2rem;
+}
+.contact__label {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  background-color: aqua;
+  position: relative;
+  padding: 3.2rem;
+  color: #192252;
+  font-family: montserrat;
+}
+.contact__label::before {
+  background: #ffece2;
+  border-radius: 50%;
+  content: "❯";
+  position: absolute;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  transition: all 0.35s;
+  color: black;
+  transform: translateY(-50%);
+  transform: rotate(90deg);
+  font-size: 2.3rem;
+}
+.contact__content {
+  position: relative;
+  padding: 1rem;
+  background: #fff;
+  height: 0;
+  transform: translateY(0.5rem);
+}
+.contact__content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: inter;
+}
+
+.active {
+  height: 20rem;
+  padding: 1rem;
+}
+
+.testimonial {
+  padding: 8rem 0;
+  text-align: center;
+}
+.testimonial h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 5.4rem;
+  font-family: montserrat;
+  color: #192252;
+  margin-bottom: 6.2rem;
+}
+.testimonial p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  font-family: inter;
+  color: #848fac;
+  margin: 2.4rem 0 3.2rem 0;
+}
+.testimonial h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  font-family: inter;
+  color: #192252;
+  margin-bottom: 2.4rem;
+}
+.testimonial__imgs img {
+  margin-left: 1.2rem;
+}

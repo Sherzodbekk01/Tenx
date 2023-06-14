@@ -1,0 +1,145 @@
+.contact {
+    @include padding;
+    @include flex;
+
+    &__left {
+        width: 50%;
+
+        h2 {
+            @include font_2(1.6rem, 500, 2.4rem);
+            font-family: montserrat;
+        }
+
+        h1 {
+            @include font_1(3.6rem, 500, 5.4rem);
+            font-family: montserrat;
+            color: $primary_color;
+            margin-top: 1.2rem;
+        }
+
+        p {
+            @include font-1;
+            font-family: inter;
+            color: $secondary;
+            @include pragraph_m;
+        }
+
+        div {
+            gap: 2.4rem;
+            @include flex;
+
+            button {
+                @include btn;
+            }
+        }
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &__box {
+        width: 100%;
+        // height: 10rem;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        position: relative;
+
+
+
+    }
+
+    &__mart {
+        margin-top: 2rem;
+    }
+
+    // &__content {
+    //     max-height: 0;
+    //     padding: 0 1rem;
+    //     color: $secondary;
+    //     background: #fff;
+    //     transition: all .35s;
+
+    // }
+
+    // &__label {
+    //     position: relative;
+    //     padding: 3.2rem;
+    //     background: #2694af;
+    //     @include font-1(2.4rem, 600, 3.6rem);
+    //     font-family: montserrat;
+    //     color: $primary_color;
+    //     &::before {
+    //         background: $acc_down_bg;
+    //         border-radius: 50%;
+    //         content: "\276F";
+    //         position: absolute;
+    //         right: 1rem;
+    //         width: 4rem;
+    //         height: 4rem;
+    //         text-align: center;
+    //         transition: all .35s;
+    //         color: black;
+    //         transform: translateY(-50%);
+    //         transform: rotate(90deg);
+    //         font-size: 2.7rem;
+
+    //     }
+    // }
+    // &__content {
+    //     position: relative;
+    //     padding: 1rem;
+    //     background: #fff;
+    //     height: 0;
+    //     overflow: hidden;
+    //     transition: 0.5s;
+    //     overflow-y: auto;
+    //     p{
+    //         @include font_1(1.8rem, 400, 2.7rem);
+    //         color: red;
+    //         z-index: 3;
+    //     }
+    // }
+    &__label {
+        @include font_1(2.4rem, 600, 3.6rem);
+        background-color: aqua;
+        position: relative;
+        padding: 3.2rem;
+
+        &::before {
+            background: $acc_down_bg;
+            border-radius: 50%;
+            content: "\276F";
+            position: absolute;
+            right: 1rem;
+            width: 4rem;
+            height: 4rem;
+            text-align: center;
+            transition: all .35s;
+            color: black;
+            transform: translateY(-50%);
+            transform: rotate(90deg);
+            font-size: 2.7rem;
+
+        }
+    }
+
+    &__content {
+        p {
+            @include font_1(1.8rem, 400, 2.7rem);
+        }
+
+        position: relative;
+        padding: 1rem;
+        background: #fff;
+        height: 0;
+        transform: translateY(0.5rem);
+    }
+
+}
+
+
+.active {
+    height: 20rem;
+    padding: 1rem;
+}

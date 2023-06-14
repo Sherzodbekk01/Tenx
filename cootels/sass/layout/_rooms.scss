@@ -1,0 +1,53 @@
+.rooms {
+    @include padding;
+
+    h1 {
+        @include font_1(3.6rem, 600, 5.4rem);
+        font-family: 'Montserrat';
+        text-align: center;
+    }
+
+    &__main-parag {
+        @include font-1;
+        font-family: 'Inter';
+        text-align: center;
+        @include pragraph_m;
+        color: $secondary;
+    }
+
+    button {
+        @include btn;
+        margin-left: 50rem;
+        margin-bottom: 8.8rem;
+    }
+
+    &__h2 {
+        @include font_1(2.4rem, 600, 2.7rem);
+        font-family: montserrat;
+        color: #000;
+        margin-top: 3.2rem;
+    }
+
+    &__parag {
+        @include font_1;
+        color: $secondary;
+        font-family: inter;
+        margin: 1.6rem 0 3.2rem 0;
+    }
+
+    &__link {
+        @include flex;
+        align-items: center;
+        gap: 1.4rem;
+
+        a {
+            @include font-1;
+            font-family: inter;
+            color: $a_link;
+        }
+    }
+    &__box{
+        @include flex;
+        gap: 2.4rem;
+    }
+}

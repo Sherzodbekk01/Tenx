@@ -1,0 +1,27 @@
+.testimonial {
+    @include padding;
+    text-align: center;
+    h1{
+        @include font-1(3.6rem, 600, 5.4rem);
+        font-family: montserrat;
+        color: $primary_color;
+        margin-bottom: 6.2rem;
+    }
+    p{
+        @include font-1;
+        font-family: inter;
+        color: $secondary;
+        @include pragraph_m;
+    }
+    h2{
+        @include font-1(2rem, 500, 3rem);
+        font-family: inter;
+        color: $primary_color;
+        margin-bottom: 2.4rem;
+    }
+    &__imgs{
+       img{
+        margin-left: 1.2rem;
+       }
+    }
+}

@@ -1,0 +1,24 @@
+.cabin-food{
+    @include padding;
+    &__first{
+        @include flex;
+    }
+    &__second{
+        @include flex;
+    }
+    &__about {
+        width: 55%;
+    }
+    &__img {
+        width: 45%;
+    }
+    &__h2{
+        @include font_1(3.6rem, 600, 5.4rem);
+        font-family: 'Montserrat';
+    }
+    &__parag{
+        @include pragraph_m;
+        @include font_1;
+        color: $secondary;
+    }
+}

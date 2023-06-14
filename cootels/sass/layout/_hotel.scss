@@ -1,0 +1,28 @@
+.hotel {
+    @include flex;
+    @include padding;
+
+    &__img {
+        width: 40%;
+    }
+
+    &__about {
+        width: 60%;
+    }
+
+    h1 {
+        @include font_1(3.6rem, 600, 5.4rem);
+        font-family: 'Montserrat';
+    }
+
+    p {
+        @include pragraph_m;
+        @include font_1;
+        color: $secondary;
+    }
+
+    button {
+        @include btn;
+        @include font_2;
+    }
+}
